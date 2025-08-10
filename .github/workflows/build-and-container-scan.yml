@@ -90,7 +90,6 @@ jobs:
             echo "result=failure" >> "$GITHUB_OUTPUT"
             echo "❌ Container scan failed - critical vulnerabilities detected"
             echo "🔍 View security findings for this PR:"
-            echo "https://github.com/${{ github.repository }}/security/code-scanning?query=pr%3A${{ github.event.pull_request.number }}+is%3Aopen"
             exit 1
           fi
 
